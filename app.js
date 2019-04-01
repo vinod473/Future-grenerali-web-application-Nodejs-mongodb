@@ -477,8 +477,8 @@ app.post('/admin/forgot', function(req, res, next) {
       var smtpTransport = nodemailer.createTransport({
           service: 'Gmail', // no need to set host or port etc.
           auth: {
-             user: 'futuregeneralitest@gmail.com',
-             pass: '2qhi4d6m5RbX3BP'
+             user: 'Your Gmail id here',
+             pass: 'Password'
          }
       });
       var mailOptions = {
@@ -567,8 +567,8 @@ app.post('/reset/:token', function(req, res) {
       var smtpTransport = nodemailer.createTransport({
         service: 'Gmail', 
         auth: {
-             user: 'futuregeneralitest@gmail.com',
-             pass: '2qhi4d6m5RbX3BP'
+             user: 'Your gmail here',
+             pass: 'Password'
          }
       });
       var mailOptions = {
@@ -633,8 +633,8 @@ app.post('/admin/reset/:token', function(req, res) {
       var smtpTransport = nodemailer.createTransport({
         service: 'Gmail', 
         auth: {
-             user: 'futuregeneralitest@gmail.com',
-             pass: '2qhi4d6m5RbX3BP'
+             user: 'Your gmail here',
+             pass: 'Password'
          }
       });
       var mailOptions = {
@@ -827,7 +827,7 @@ app.post('/contactus', (req, res) => {
     secure: false, // true for 465, false for other ports
     auth: {
       user: 'branson.wintheiser@ethereal.email', // generated ethereal user
-      pass: 'SvNpk5jG6vcHpvctv8' // generated ethereal password
+      pass: 'Password' // generated ethereal password
     },
   });
 
